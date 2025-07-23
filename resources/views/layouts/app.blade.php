@@ -11,7 +11,26 @@
     <!-- Meta CSRF para formularios -->
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>
-<body>
+<body  style="
+    background-image: url('{{ asset('images/fondo nuevo.jpg') }}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+">
+  <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1); /* <- ajusta el 0.1 para más o menos transparencia */
+            z-index: 1;
+            pointer-events: none; /* <- para que no interfiera con los clics */
+        "></div>
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
         <a class="navbar-brand" href="{{ route('dashboard') }}">Peluquería</a>
         <button

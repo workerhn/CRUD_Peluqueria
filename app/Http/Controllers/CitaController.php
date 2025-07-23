@@ -49,7 +49,7 @@ class CitaController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('citas.show');
     }
 
     /**
@@ -71,9 +71,9 @@ class CitaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+   public function destroy(Cita $cita)
     {
         $cita->delete();
-        return redirect()->route('citas.index')->with('success', 'Cita eliminada.');
+        return redirect()->route('citas.index')->with('success', 'Cita eliminada correctamente.');
     }
 }

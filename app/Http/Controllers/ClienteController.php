@@ -12,8 +12,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-       $clientes = Cliente::all();
-       return view('clientes.index', compact('clientes'));
+        $clientes = Cliente::all();
+        return view('clientes.index', compact('clientes'));
     }
 
     /**
@@ -21,7 +21,7 @@ class ClienteController extends Controller
      */
     public function create()
     {
-         return view('clientes.create');
+        return view('clientes.create');
     }
 
     /**
@@ -73,9 +73,10 @@ class ClienteController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Cliente $cliente)
     {
         $cliente->delete();
         return redirect()->route('clientes.index')->with('success', 'Cliente eliminado.');
     }
+
 }
