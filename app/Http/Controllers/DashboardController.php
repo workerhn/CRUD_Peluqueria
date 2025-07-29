@@ -10,7 +10,7 @@ class DashboardController extends Controller
     
     public function index()
     {
-        $totalClientes = \App\Models\Cliente::count();
+        $totalClientes = Cliente::count();
         return view('dashboard', compact('totalClientes'));
     }
 }

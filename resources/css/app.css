@@ -9,6 +9,10 @@ body {
     min-height: 100vh;
 }
 
-h1{
-    font-size: medium;
+.dashboard-title {
+    font-size: 3rem; /* Ajusta el tamaño según lo que necesites */
+}
+
+.dashboard-btn {
+    font-size: 1.3rem; /* Ajusta el tamaño según lo que necesites */
 }
