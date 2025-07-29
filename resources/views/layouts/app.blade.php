@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             @auth
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('clientes.index') }}">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('dashboard') }}">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('clientes.index') }}">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('citas.index') }}">Citas</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('servicios.index') }}">Servicios</a></li>
